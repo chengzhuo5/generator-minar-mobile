@@ -1,8 +1,8 @@
-
-import NuxtConfiguration from '@nuxt/config'
+import { Configuration } from '@nuxt/types'
 import '@nuxtjs/universal-storage'
 
-const config: NuxtConfiguration = {
+const config: Configuration = {
+  buildModules: ['@nuxt/typescript-build'],
   mode: 'universal',
   /*
   ** Headers of the page
@@ -111,9 +111,9 @@ const config: NuxtConfiguration = {
       }
     }
   },
-  // router: {
-  //   base: '/MinarMobileSSRFrameworkTS/'
-  // }
+  router: {
+    base: '/MinarMobileSSRFrameworkTS/'
+  }
 }
 if (config.router && config.router.base)
   config.generate = {

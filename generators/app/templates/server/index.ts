@@ -68,6 +68,5 @@ async function start() {
     badge: true
   })
 }
-if (!process.defaultApp)
-  start();
+start();
 export { start }
