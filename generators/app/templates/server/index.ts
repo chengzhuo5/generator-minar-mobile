@@ -13,7 +13,6 @@ const app = new Koa()
 
 // Import and Set Nuxt.js options
 config.dev = !(app.env === 'production')
-config.buildDir = path.join(__dirname, `../${config.buildDir || ".nuxt"}`) // for electron-builder
 function portIsOccupied(host, port) {
   return new Promise(resolve => {
     // 创建服务并监听该端口

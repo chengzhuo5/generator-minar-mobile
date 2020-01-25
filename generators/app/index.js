@@ -66,10 +66,6 @@ module.exports = class extends Generator {
     this.fs.copy(this.templatePath("pages"), this.destinationPath("pages"));
     this.fs.copy(this.templatePath("plugins"), this.destinationPath("plugins"));
     this.fs.copy(this.templatePath("server"), this.destinationPath("server"));
-    this.fs.copy(
-      this.templatePath("serverJs"),
-      this.destinationPath("serverJs")
-    );
     this.fs.copy(this.templatePath("static"), this.destinationPath("static"));
     this.fs.copy(this.templatePath("store"), this.destinationPath("store"));
     this.fs.copy(this.templatePath("utils"), this.destinationPath("utils"));
